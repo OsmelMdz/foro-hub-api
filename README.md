@@ -18,23 +18,17 @@ La API permite realizar operaciones CRUD sobre los tópicos y autenticar usuario
 - JWT para autenticación
 - Insomnia o Postman para pruebas de la API
 
----------------------------------------------------------
-Configuración del proyecto
-1. Clonar el repositorio:
-   git clone https://github.com/OsmelMdz/foro-hub-api.git
-   cd foro-hub-api
-
-2. Configurar la base de datos en src/main/resources/application.properties:
+## Cómo ejecutar el proyecto
+1. Clona este repositorio en tu máquina local.
+2. Abre el proyecto con IntelliJ IDEA.
+3. Configurar la base de datos en src/main/resources/application.properties:
    spring.datasource.url=jdbc:mysql://localhost/nombre_de_tu_bd?createDatabaseIfNotExist=true
    spring.datasource.username=tu_usuario
    spring.datasource.password=tu_contraseña
    spring.jpa.hibernate.ddl-auto=update
-
-3. Ejecutar migraciones (si aplicaste Flyway o Liquibase).
-
-4. Iniciar el proyecto:
+4. Ejecutar migraciones (si aplicaste Flyway o Liquibase).
+5. Iniciar el proyecto:
    mvn spring-boot:run
-
 La API estará disponible en:
 http://localhost:8080
 
